@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.android.helloandroid.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+
+    <ImageView
+        android:id="@+id/team_logo"
+        android:layout_width="100sp"
+        android:layout_height="75sp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/udacitylogo"
+
+        />
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="80sp"
+        android:layout_toRightOf="@id/team_logo"
+        android:src="@drawable/udacitybrain"
+        />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/udacity_team"
+        android:layout_width="230sp"
+        android:layout_height="150sp"
+        android:layout_below="@id/linear_layout1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/udacityteam" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/udacity_team"
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="30sp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:text="Udacity"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:text="2465 Latham St"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:text="Mountain View, CA 94043"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:text="Tel.: 650-555-5555"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textColorLink="#2196F3"
+            android:text="www.udacity.com"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5sp"
+        android:text="Exit"
+        android:onClick="exitButton"
+
+        />
+
+</RelativeLayout>
